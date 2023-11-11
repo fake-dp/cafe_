@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let signupButton = document.querySelector(".signup-btn");
   let signinButton = document.querySelector(".signin-btn");
   signupButton.addEventListener("click", function () {
-    window.location.href = "./html/home.html";
+    window.location.href = "./home.html";
   });
   signinButton.addEventListener("click", function () {
-    window.location.href = "./html/home.html";
+    window.location.href = "./home.html";
   });
 });
