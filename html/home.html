@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카페뷰리</title>
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../javascript/pageRouter.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="inner">
+        <div class="logo__container">
+            <a href='javascript:void(0);' class="logo">
+                <img src="../images/starbucks_logo.png" alt="STARBUCKS" />
+            </a>
+            <h4>카페 뷰리</h4>
+        </div>
+
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">메인 페이지</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li class="menu-item">
+                    <h4>메인</h4>
+                  </li>
+                  <li class="menu-item" data-page="event.html">
+                    <h4>이벤트</h4>
+                  </li>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">주문 페이지</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li class="menu-item" data-page="menu.html">
+                    <h4>메뉴</h4>
+                  </li>
+                  <li class="menu-item" data-page="category.html">
+                    <h4>카테고리</h4>
+                  </li>
+                  <li class="menu-item" data-page="option.html">
+                    <h4>옵션</h4>
+                  </li>
+                </ul>
+              </div>
+          
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">메뉴</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li class="menu-item" data-page="menucategory.html">
+                    <h4>메뉴 카테고리</h4>
+                  </li>
+                  <li class="menu-item" data-page="intromenu.html">
+                    <h4>메뉴 소개</h4>
+                  </li>
+                  <li class="menu-item" data-page="review.html">
+                    <h4>리뷰</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">기타</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li class="menu-item" data-page="signup.html">
+                    <h4>회원가입</h4>
+                  </li>
+                  <li class="menu-item" data-page="login.html">
+                    <h4>로그인</h4>
+                  </li>
+                  <li class="menu-item" data-page="userinfo.html">
+                    <h4>회원정보</h4>
+                  </li>
+                  <li class="menu-item" data-page="orderlist.html">
+                    <h4>주문내역</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 메인 페이지 이니셜 컨텐츠 안에 작성하면됩니다.-->
+    <div class="initial-content">
+      <!-- 그냥 예시 이미지 -->
+      <img 
+      class="testimg"
+      src="./../images/banner.png" alt="banner" />
+    </div>
+
+    <!-- 메뉴 클릭하면 해당 컨텐츠들이 출력됩니다. -->
+    <!-- html폴더 안에서 해당 컨텐츠 작업하면 됩니다. -->
+    <div id="content"></div>
+
+  </body>
+</html>
