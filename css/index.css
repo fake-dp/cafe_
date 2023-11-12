@@ -62,7 +62,7 @@ header .main-menu {
 }
 /* 헤더 메뉴 이름 값 조절입니다.  */
 header .main-menu .item .item__name {
-  padding: 10px 20px 34px 20px;
+  padding: 10px 20px 14px 20px;
   font-family: Arial, sans-serif;
   font-size: 18px;
 }
