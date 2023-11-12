@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, CategoryTitle } from "../commonstyled/commonStyled";
-function Event(props) {
+function SignUp(props) {
   return (
     <Container>
-      <CategoryTitle>이벤트</CategoryTitle>
+      <CategoryTitle>회원정보</CategoryTitle>
     </Container>
   );
 }
 
-export default Event;
+export default SignUp;

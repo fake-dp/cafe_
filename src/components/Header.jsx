@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logoImage from "../images/starbucks_logo.png";
-
+import { useNavigate } from "react-router";
 function Header({ setActiveContetns }) {
+  const navigate = useNavigate();
   const [activeMenu, setActiveMenu] = useState(null);
 
   const handleMouseEnter = (menuName) => {
@@ -12,6 +13,11 @@ function Header({ setActiveContetns }) {
   const handleMouseLeave = () => {
     console.log("activeMenu", activeMenu);
     setActiveMenu(null);
+  };
+
+  const handleLoginPage = (e) => {
+    e.preventDefault();
+    navigate("/");
   };
 
   return (
@@ -74,10 +80,16 @@ function Header({ setActiveContetns }) {
             <ItemName isActive={activeMenu === "etc"}>기타</ItemName>
             <SubMenu isActive={activeMenu === "etc"}>
               <SubMenuContent>
-                <MenuItem>회원가입</MenuItem>
-                <MenuItem>로그인</MenuItem>
-                <MenuItem>회원정보</MenuItem>
-                <MenuItem>주문내역</MenuItem>
+                <MenuItem onClick={() => setActiveContetns("signup")}>
+                  회원가입
+                </MenuItem>
+                <MenuItem onClick={handleLoginPage}>로그인</MenuItem>
+                <MenuItem onClick={() => setActiveContetns("userinfo")}>
+                  회원정보
+                </MenuItem>
+                <MenuItem onClick={() => setActiveContetns("orderlist")}>
+                  주문내역
+                </MenuItem>
               </SubMenuContent>
             </SubMenu>
           </Item>

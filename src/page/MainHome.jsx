@@ -9,6 +9,10 @@ import Event from "../components/menu/Event";
 import MenuCategory from "../components/menu/MenuCategory";
 import Review from "../components/menu/Review";
 import IntroMenu from "../components/menu/IntroMenu";
+import SignUp from "../components/menu/SignUp";
+import UserInfo from "../components/menu/UserInfo";
+import OrderList from "../components/menu/OrderList";
+
 function MainHome(props) {
   const [activeContents, setActiveContetns] = useState("mainhome");
 
@@ -34,6 +38,13 @@ function MainHome(props) {
         <IntroMenu />
       ) : activeContents === "review" ? (
         <Review />
+      ) : // 기타
+      activeContents === "signup" ? (
+        <SignUp />
+      ) : activeContents === "userinfo" ? (
+        <UserInfo />
+      ) : activeContents === "orderlist" ? (
+        <OrderList />
       ) : null}
     </Container>
   );
@@ -42,5 +53,5 @@ function MainHome(props) {
 export default MainHome;
 
 const Container = styled.div`
-  margin-top: 120px;
+  margin-top: 126px;
 `;

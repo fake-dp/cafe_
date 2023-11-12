@@ -1,7 +1,11 @@
 import React from "react";
-
+import { Container, CategoryTitle } from "../commonstyled/commonStyled";
 function IntroMenu(props) {
-  return <div>인트로메뉴</div>;
+  return (
+    <Container>
+      <CategoryTitle>메뉴소개</CategoryTitle>
+    </Container>
+  );
 }
 
 export default IntroMenu;

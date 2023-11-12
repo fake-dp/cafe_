@@ -56,10 +56,11 @@ const CategoryBox = styled.div`
 `;
 
 const CategoryImgBoxContainer = styled.div`
-  width: 100%;
+  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0 auto;
   margin-bottom: 50px;
 `;
 
@@ -68,7 +69,6 @@ const CategoryImgBox = styled.div`
   height: 150px;
   background-size: cover;
   background-position: center;
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +76,7 @@ const CategoryImgBox = styled.div`
   border-radius: 10px;
   color: #fff;
   font-size: 20px;
+  margin: 10px;
   cursor: pointer;
 `;
 
